@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en,tr"> 
+    <head>
+        
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+          <title>Market | Accessories</title>
+          <link rel="stylesheet" href="bazar.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Volkhov&display=swap" rel="stylesheet">
+    </head>
+
+
+
+<body>
+    
+
+
+<div class="header">
+
+
+<div class="container">
+
+
+<div class="navbar">
+<div class="logo">
+
+    <img src="horse-vector-silhouette-1.png" width="90px">
+</div>
+<nav>
+<ul id="MenuItems">
+    <li><a href="bazar.html">Go Home</a></li>
+    <li><a href="mallar.html">Cars</a></li>
+    <li><a href="">About Us</a></li>
+    <li><a href="">Contact</a></li>
+    <li><a href="giris.html">Account</a></li>
+</ul>
+
+</nav>
+<img src="shopping-bag.png" width="30px" height="30px"> 
+<img src="menu bar.png" class="menu-icon" onclick="menutoggle()">
+</div>
+</div>
+
+<!----------------Login------------------>
+
+<div class="acoount-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="main.png" width="100%">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="Indicator">
+
+                    </div>
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Forgot your password?</a>
+                    </form>
+
+                    <form id="RegistrationForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Register</button>
+                        
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download the app for Android and iOS devices.</p>
+                <div class="app-logo">
+                    <img src="google play.png" >
+                    <img src="app store.png" >
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="logo since.png">
+                <p>Our goal is to present you with the best and latest model cars.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Returns</li>
+                    <li>Partnership</li>
+                </ul>
+                
+            </div>
+            <div class="footer-col-4">
+                <h3>Our Social Networks</h3>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>YouTube</li>
+                </ul>
+                
+            </div>
+        </div>
+        <hr>
+        <p class="copyright"> Copyright 2020 - Ali Hafizov</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script>
+    var MenuItems  = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight ="0px";
+        }
+    }
+
+
+</script>
+
+
+<script>
+
+var LoginForm = document.getElementById("LoginForm");
+var RegistrationForm = document.getElementById("RegistrationForm");
+var Indicator = document.getElementById("Indicator");
+
+function register(){
+    RegistrationForm.style.transform = "translateX(0px)";
+    LoginForm.style.transform = "translateX(0px)";
+    Indicator.style.transform = "translateX(100px)";
+}
+
+function login(){
+
+    RegistrationForm.style.transform = "translateX(300px)";
+    LoginForm.style.transform = "translateX(300px)";
+    Indicator.style.transform = "translateX(0px)";
+}
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
